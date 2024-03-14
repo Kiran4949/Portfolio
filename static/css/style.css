@@ -8,10 +8,11 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: #25b79f;
+  background-color: #07374a;
   height: 100vh;
 }
 
@@ -69,7 +70,7 @@ header {
   top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #07374a;
+  color: #25b79f;
   width: 100%;
   text-align: center;
 }
@@ -84,7 +85,7 @@ header {
   font-size: 1.5rem;
 }
 
-.typewrite{
+.typewrite {
   text-decoration: none;
   color: white;
 }
@@ -95,25 +96,26 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
-  border: 3px solid #07374a;
+  border: 3px solid #25b79f;
   border-radius: 50%;
 }
 
 .angle-down-icon a {
   text-decoration: none;
-  color: #07374a;
+  color: #25b79f;
   padding: 1rem;
 }
 
 /* ////........About Me........//// */
 
 .about-me {
-  background-color: #07374a;
+  background-color: #25b79f;
   padding: 6rem 0;
+  height: 100vh;
 }
 
 .about-me .about-heading {
-  color: #25b79f;
+  color: #07374a;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
@@ -124,13 +126,26 @@ header {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
+  margin-left: 44%;
 }
 
 .about-content p {
   font-size: 1.2rem;
-  color: #f0f0e6;
+  color: #07374a;
   padding: 0 2.3rem;
   text-align: center;
+}
+
+.about-me .about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ///.....Skills Bar....../// */
+
+.skills-content {
+  background-color: #07374a;
+  padding: 6rem 0;
 }
 
 .skills .skills-heading {
@@ -140,24 +155,9 @@ header {
   text-align: center;
 }
 
-.about-me .about-content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.about-content .left-content {
-  flex-basis: 45%;
-  text-align: center;
-}
-
-.about-content .right-content {
-  flex-basis: 45%;
-}
-
-/* ///.....Skill Bar....../// */
-
 .skills-bar {
-  padding: 25px 30px;
+  padding: 10px 30px;
+  margin-left: 30%;
 }
 
 .skills-bar .bar {
@@ -202,22 +202,31 @@ header {
 }
 
 .progress-line .html {
-  width: 80%;
+  width: 90%;
 }
 .progress-line .css {
-  width: 70%;
+  width: 90%;
 }
 .progress-line .bootstrap {
-  width: 70%;
+  width: 90%;
 }
 .progress-line .javascript {
-  width: 60%;
+  width: 80%;
 }
 .progress-line .python {
-  width: 70%;
+  width: 80%;
+}
+.progress-line .django {
+  width: 80%;
+}
+.progress-line .react {
+  width: 80%;
 }
 .progress-line .mysql {
-  width: 60%;
+  width: 70%;
+}
+.progress-line .git {
+  width: 70%;
 }
 
 .bar .progress-line span::before {
@@ -247,22 +256,31 @@ header {
 }
 
 .progress-line .html::after {
-  content: "80%";
+  content: "90%";
 }
 .progress-line .css::after {
-  content: "70%";
+  content: "90%";
 }
 .progress-line .bootstrap::after {
-  content: "70%";
+  content: "90%";
 }
 .progress-line .javascript::after {
-  content: "60%";
+  content: "80%";
 }
 .progress-line .python::after {
-  content: "70%";
+  content: "80%";
+}
+.progress-line .django::after {
+  content: "80%";
+}
+.progress-line .react::after {
+  content: "80%";
 }
 .progress-line .mysql::after {
-  content: "60%";
+  content: "70%";
+}
+.progress-line .git::after {
+  content: "70%";
 }
 
 .navbar.solid {
@@ -285,10 +303,20 @@ header {
 }
 
 .work-arrow {
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 .work-arrow a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #07374a;
+}
+
+.work-arrow-1 {
+  margin: 4rem 20%;
+}
+
+.work-arrow-1 a {
   font-size: 1rem;
   text-decoration: none;
   color: #25b79f;
@@ -320,10 +348,16 @@ header {
   margin: 3rem 0;
 }
 
+.races {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .proj-1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 48px;
 }
 
 .proj-1 img {
@@ -340,8 +374,13 @@ header {
 }
 
 .proj-1 .proj1-details i {
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   color: #07374a;
+}
+
+.proj-1 .proj1-details .icon {
+  height: 30px;
+  width: 30px;
 }
 
 .proj-1 .proj1-details h2 {
@@ -411,8 +450,13 @@ header {
 }
 
 .proj-2 .proj2-details i {
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   color: #07374a;
+}
+
+.proj-2 .proj2-details .icon {
+  height: 30px;
+  width: 30px;
 }
 
 .proj-2 .proj2-details h2 {
@@ -461,7 +505,7 @@ header {
 
 .more-work {
   text-align: center;
-  margin: 3rem 0 1rem 0;
+  margin: 5rem 0 1rem 0;
 }
 
 .more-work p {
@@ -530,65 +574,77 @@ header {
 /* ////......Media query......//// */
 
 @media (max-width: 500px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   html {
-    font-size: 60%;
+    font-size: 55%;
+    width: 100%;
+    overflow-x: hidden;
   }
 
-  .about-content .left-content {
-    flex-basis: 100%;
-    text-align: center;
+  .header {
+    width: 100%;
   }
 
-  .about-content .right-content {
-    flex-basis: 100%;
+  .navbar-brand {
+    display: none;
+  }
+
+  .menu-items {
+    width: 100%;
+  }
+
+  .about-me {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .about-content {
+    margin-top: 20%;
+  }
+
+  .about-content img {
+    margin-left: 100px;
+    padding: 30px;
+  }
+
+  .work-arrow {
+    margin-top: 40%;
+  }
+
+  .skills-content {
+    height: 100vh;
   }
 
   .skills {
     width: 100%;
   }
 
+  .skills-bar {
+    margin-left: 10px;
+  }
+
   .skills-bar .bar .progress-line {
     width: 100%;
   }
 
-  .work-arrow {
-    display: none;
-  }
-
-  .right-content h1 {
-    margin-top: 3.2rem;
-  }
-
-  .proj-1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .proj-1 img {
-    height: 230px;
-    width: 290px;
-    margin-bottom: 0.5rem;
-  }
-
-  .proj-2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .proj-2 img {
-    height: 250px;
-    width: 290px;
-    margin-bottom: 0.5rem;
-  }
-
-  .work-arrow-2 a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #25b79f;
-    display: block;
+  .work-arrow-1 {
     text-align: center;
+    padding: 2px;
+  }
+
+  .proj-1 img,
+  .proj-2 img {
+    height: 180px;
+    width: 240px;
+    margin-bottom: 0.5rem;
+  }
+
+  .icon {
+    display: none;
   }
 
   .contact-content {
@@ -599,63 +655,64 @@ header {
 @media (min-width: 501px) and (max-width: 768px) {
   html {
     font-size: 65%;
+    overflow-x: hidden;
   }
 
-  .about-content .left-content {
-    flex-basis: 100%;
-    text-align: center;
+  .about-me {
+    height: 100vh;
   }
 
-  .about-content .right-content {
-    flex-basis: 100%;
+  .about-content img {
+    margin-left: 170px;
+    padding: 30px;
+  }
+
+  .work-arrow {
+    margin-top: 40%;
+  }
+
+  .skills-content {
+    height: 100vh;
   }
 
   .skills {
     width: 100%;
   }
 
+  .skills-bar {
+    margin-left: 20px;
+  }
+
   .skills-bar .bar .progress-line {
     width: 100%;
   }
 
-  .work-arrow {
-    display: none;
+  .work-arrow-1 {
+    text-align: center;
+    padding: 2px;
   }
 
-  .right-content h1 {
-    margin-top: 3.2rem;
+  .portfolio {
+    padding: 30%;
   }
 
-  .proj-1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .proj-1 img {
-    height: 240px;
-    width: 290px;
-    margin-bottom: 0.5rem;
-  }
-
-  .proj-2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
+  .proj-1 img,
   .proj-2 img {
     height: 240px;
     width: 290px;
     margin-bottom: 0.5rem;
   }
 
-  .work-arrow-2 a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #25b79f;
-    display: block;
-    text-align: center;
+  .icon {
+    display: none;
+  }
+
+  .more-work {
+    margin-top: 60%;
+  }
+
+  .contact {
+    height: 100vh;
   }
 
   .contact-content {
@@ -666,15 +723,28 @@ header {
 @media (min-width: 769px) and (max-width: 1200px) {
   html {
     font-size: 70%;
+    overflow-x: hidden;
   }
 
-  .about-content .left-content {
-    flex-basis: 100%;
-    text-align: center;
+  .about-me {
+    height: 100vh;
   }
 
-  .about-content .right-content {
-    flex-basis: 100%;
+  .about-content {
+    margin-top: 20%;
+  }
+
+  .about-content img {
+    margin-left: 340px;
+    padding: 30px;
+  }
+
+  .work-arrow {
+    margin-top: 60%;
+  }
+
+  .skills-content {
+    height: 100vh;
   }
 
   .skills {
@@ -683,28 +753,29 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20%;
   }
 
-  .work-arrow {
-    display: none;
+  .skills-bar {
+    margin-left: 20px;
   }
 
-  .left-content h1 {
-    margin-top: 3.2rem;
+  .work-arrow-1 {
     text-align: center;
+    margin-top: 40%;
   }
 
-  .right-content h1 {
-    margin-top: 3.2rem;
-    text-align: center;
+  .proj-2 .proj2-details i {
+    font-size: 3rem;
+    color: #07374a;
   }
 
-  .work-arrow-2 a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #25b79f;
-    display: block;
-    text-align: center;
+  .more-work {
+    margin-top: 10%;
+  }
+
+  .contact {
+    height: 100vh;
   }
 
   .contact-content {
